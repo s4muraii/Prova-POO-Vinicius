@@ -1,6 +1,12 @@
-tarefas = {}
+tarefas = []
 
 class ToDoList:
+
+    def __init__ (self, descricao, indice):
+        self.__descricao = descricao
+        self.indice = indice
+
+
     def adicionar_tarefa(self, descricao: str):
         self.__descricao = descricao
         return descricao
@@ -11,7 +17,6 @@ class ToDoList:
             -indice
 
     def listar_tarefas(self):
-        print(tarefas)
         return tarefas
     
     def get_Descricao(self, descricao):

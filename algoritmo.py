@@ -9,10 +9,8 @@ def main():
             try:
                 match menu:
                     case 1:
-                        add = ToDoList()
-                        add.adicionar_tarefa(input("Você escolheu adicionar uma tarefa! Digite a tarefa aqui: "))
-                        adicionar = add.set_Descricao()
-                        adicionar.append(tarefas)
+                        add = ToDoList(input("Você escolheu adicionar uma tarefa! Digite a tarefa aqui: "), (input("Digite o indice da tarefa: ")))
+                        tarefas.append(add)
                         print(f"Tarefa adicionada!")
                         os.system("pause")
                         os.system("cls")
@@ -20,7 +18,9 @@ def main():
 
                     case 2:
                         if x == 1:
-                            print(f"Você escolheu listar as tarefas! As tarefas inseridas são: {add.listar_tarefas()}")
+                            print(f"Você escolheu listar as tarefas!")
+                            for i in tarefas:
+                                print (add.get_Descricao())
                             os.system("pause")
                             os.system("cls")
 
