@@ -3,7 +3,6 @@ tarefas = {}
 class ToDoList:
     def adicionar_tarefa(self, descricao: str):
         self.descricao = descricao
-        descricao.append(tarefas)
         return descricao
 
     def excluir_tarefa(self, indice: int):
