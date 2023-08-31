@@ -11,7 +11,7 @@ def main():
                     case 1:
                         add = ToDoList()
                         add.adicionar_tarefa(input("Você escolheu adicionar uma tarefa! Digite a tarefa aqui: "))
-                        adicionar = add.descricao()
+                        adicionar = add.set_Descricao()
                         adicionar.append(tarefas)
                         print(f"Tarefa adicionada!")
                         os.system("pause")
