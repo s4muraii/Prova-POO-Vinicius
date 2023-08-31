@@ -25,4 +25,3 @@ Tarefas:
 2. Estudar para a prova
 
 `A TERCEIRA TAREFA, PASSA A SER A SEGUNDA NA LISTA`
-
