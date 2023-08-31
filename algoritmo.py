@@ -1,5 +1,6 @@
 from classes import *
 import os
+tarefas = []
 
 def main():
     while True:
@@ -19,8 +20,7 @@ def main():
                     case 2:
                         if x == 1:
                             print(f"Você escolheu listar as tarefas!")
-                            for i in tarefas:
-                                print (add.get_Descricao())
+                            print (tarefas)
                             os.system("pause")
                             os.system("cls")
 

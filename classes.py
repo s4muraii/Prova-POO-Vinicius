@@ -1,4 +1,3 @@
-tarefas = []
 
 class ToDoList:
 
@@ -6,18 +5,12 @@ class ToDoList:
         self.__descricao = descricao
         self.indice = indice
 
-
     def adicionar_tarefa(self, descricao: str):
         self.__descricao = descricao
         return descricao
 
     def excluir_tarefa(self, indice: int):
         self.__indice = indice
-        for indice in tarefas:
-            -indice
-
-    def listar_tarefas(self):
-        return tarefas
     
     def get_Descricao(self, descricao):
         return descricao
