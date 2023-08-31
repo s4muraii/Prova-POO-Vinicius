@@ -4,13 +4,15 @@ import os
 def main():
     while True:
         try:
-            menu = int(input("---------------------------------------------Bem-Vindo a TO-DO!--------------------------------------------- \n\nDigite a opção desejada: \n[1] Adicionar tarefas\n[2] Listar tarefas\n[3] Excluir tarefas\n[4] Sair\n\nDigite sua escolha: "))
+            menu = int(input("\n---------------------------------------------\n\nBem-Vindo a TO-DO!\n\n--------------------------------------------- \n\nDigite a opção desejada: \n[1] Adicionar tarefas\n[2] Listar tarefas\n[3] Excluir tarefas\n[4] Sair\n\nDigite sua escolha: "))
             os.system("cls")
             try:
                 match menu:
                     case 1:
                         add = ToDoList()
                         add.adicionar_tarefa(input("Você escolheu adicionar uma tarefa! Digite a tarefa aqui: "))
+                        adicionar = add.descricao()
+                        adicionar.append(tarefas)
                         print(f"Tarefa adicionada!")
                         os.system("pause")
                         os.system("cls")
